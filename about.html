@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Dark theme */
+        .dark-page-background {
+            background-color: #101119;
+            color: #fff;
+        }
+
+        .themebtn {
+            width: 40px;
+            margin-left: 30px;
+            background-color: #343a40;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: -20px;
+            margin-left: 15px;
+
+        }
+
+
+        .footer {
+            background-color: #1f262e;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .jumbotron {
+            margin-top: 60px;
+        }
+
+        .dark-jumbotron {
+            background-color: #242c35;
+            /* Change background color to dark */
+            color: #fff;
+            /* Change text color to white */
+        }
+
+        .logoabc {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+
+        }
+
+        .scroll_arrow {
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border: 2px solid #eeeaea;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 4rem;
+            right: 2rem;
+            font-size: 2.5rem;
+            display: none;
+            transition: all .3s ease-in;
+            /* display: block; */
+            height: 50px;
+            width: 50px;
+        }
+
+        .scroll_arrow:hover {
+            background: rgba(255, 255, 255, 0.6);
+            transform: scale(1.1);
+            backdrop-filter: blur(100px);
+            border: 2px solid #eeeaea;
+
+        }
+
+        i {
+            color: red;
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -5px;
+
+        }
+
+        .arrow {
+
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <div class="nav-item">
+                <img class="logoabc"
+                    src="create-a-flat-vector-illustrative-style-wordmark-l-XvZtP7TCT6qm9DREoiuEng-w7AmXrY-R0a9eMtcrasXaA.jpeg"
+                    alt="">
+            </div>
+            <a class="navbar-brand ml-4" href="/abc.html">Academy Of Brilliant Classes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/abc.html">Home</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Register </a>
+                    </li>
+
+                    <div class="container">
+                        <!-- <h2>Courses</h2> -->
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Courses
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Maths</a>
+                                <a class="dropdown-item" href="#">Science</a>
+                                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="themebtn" class="dropdown-item btn-outline-secondary " href="#"
+                        onclick="toggleTheme('light')">
+                        <img class="imaze" src="moon-clear-fill.png" alt="...">
+                    </button>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Jumbotron -->
+    <!-- <div class="container"> -->
+    <div class="jumbotron jumbotron-fluid" id="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Welcome to ABC Classes</h1>
+            <p class="lead">Empowering students for a brighter future.</p>
+            <button class="btn btn-primary">Learn more</button>
+        </div>
+    </div>
+    <!-- </div> -->
+
+    <div class="container my-4">
+        <div class="row featurette d-flex justify-content-center align-items-center ">
+            <div class="col-md-7 ">
+                <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span
+                        class="text-body-secondary">It’ll blow your mind.</span></h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose
+                    here.</p>
+            </div>
+            <div class="col-md-5 ">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    src="https://source.unsplash.com/300x300/?maths,teacher,study" alt="">
+
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center ">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span
+                        class="text-body-secondary">It’ll blow your mind.</span></h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose
+                    here.</p>
+            </div>
+            <div class="col-md-5 order-md-1 ">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    src="2 quotes phto.jpeg" width=280 alt="">
+
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center ">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span
+                        class="text-body-secondary">It’ll blow your mind.</span></h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose
+                    here.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    src="https://source.unsplash.com/300x300/?teacher,study" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="buttonparent">
+        <!-- <button onclick="backToTop()" id="back-to-top-btn"> -->
+        <div class="scroll_arrow">
+            <i class="ri-arrow-up-s-line"></i>
+        </div>
+        <!-- </button> -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center mt-4">
+        <div class="container">
+            <p>&copy; 2024 ABC Coaching Classes. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const scrollarrow = document.querySelector('.scroll_arrow')
+
+        window.addEventListener('scroll', () => {
+            //   console.log(window.pageYOffset)
+            if (window.pageYOffset > 224) {
+                scrollarrow.style.display = "block";
+            }
+            else {
+                scrollarrow.style.display = "none";
+            }
+        })
+
+        scrollarrow.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
+        })
+    </script>
+    <!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
